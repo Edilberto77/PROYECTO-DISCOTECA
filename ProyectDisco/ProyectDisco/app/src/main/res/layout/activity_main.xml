@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Fondo con efecto de desenfoque -->
+    <ImageView
+        android:id="@+id/imageViewBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/hola_"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Texto de bienvenida -->
+    <TextView
+        android:id="@+id/textViewWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¡Bienvenido a Bass District!"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp" />
+
+    <!-- Botón de entrada -->
+    <Button
+        android:id="@+id/buttonEnter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Entrar"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#FF4081"
+        app:layout_constraintTop_toBottomOf="@+id/textViewWelcome"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp" />
+
+    <!-- Botón para ver eventos -->
+    <Button
+        android:id="@+id/buttonEvents"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Eventos"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#FF4081"
+        app:layout_constraintTop_toBottomOf="@+id/buttonEnter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp" />
+
+    <!-- Botón para reservar mesa -->
+    <Button
+        android:id="@+id/buttonReserveTable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reservar Mesa"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#FF4081"
+        app:layout_constraintTop_toBottomOf="@+id/buttonEvents"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp" />
+
+    <!-- Botón para ver lista de invitados -->
+    <Button
+        android:id="@+id/buttonGuestList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lista de Invitados"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#FF4081"
+        app:layout_constraintTop_toBottomOf="@+id/buttonReserveTable"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp" />
+
+    <!-- Botón para ver promociones -->
+    <Button
+        android:id="@+id/buttonPromotions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Promociones"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#FF4081"
+        app:layout_constraintTop_toBottomOf="@+id/buttonGuestList"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp" />
+
+    <!-- Botón para contacto -->
+    <Button
+        android:id="@+id/buttonContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contacto"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#FF4081"
+        app:layout_constraintTop_toBottomOf="@+id/buttonPromotions"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
